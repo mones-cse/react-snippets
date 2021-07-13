@@ -1,13 +1,9 @@
-import "./App.scss";
-
 function App() {
-    return (
-        <div className="App">
-            <div className={"bg-secondary min-vh-100"}>
-                <h1>Hello</h1>
-            </div>
+    return <div className="Container">
+        <div className={"bg-light col-8 m-auto min-vh-100 text-center"}>
+            Hello
         </div>
-    );
+    </div>;
 }
 
 export default App;
