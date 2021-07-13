@@ -1,11 +1,24 @@
-import React, {useContext} from 'react';
-import ThemeContext from "./ThemeContext";
+import React from "react";
+import { useTheme } from "./ThemeContextProvider";
+
 const FunctionContextComponent = () => {
-    // since it is functional component no need to use context.consumer. just use useContext hooks
-    const ctx = useContext(ThemeContext);
+    // use custom hooks
+    const ctx = useTheme();
     return (
-        <div className={"p-5 m-5 rounded-3 border border-dark shadow "} style={{backgroundColor:ctx.backgroundColor}}>
-            FunctionContextComponent
+        <div>
+            <button
+                className={"btn-lg btn-primary btn-outline-dark"}
+                onClick={ctx.toggleBackgroundColor}
+            >
+                Toggle Theme
+            </button>
+
+            <div
+                className={"p-5 m-5 rounded-3 border border-dark shadow "}
+                style={{ backgroundColor: ctx.backgroundColor }}
+            >
+                FunctionContextComponent
+            </div>
         </div>
     );
 };
