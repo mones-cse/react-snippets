@@ -11,14 +11,10 @@ const reducer = (todoState, action) => {
             return [...todoState, newTodo(action.payload)];
         case ACTIONS.DELETE_TODO:
             let temp = [...todoState];
-            console.log('--->',temp);
             let findIndex = temp.findIndex(each => each.id=== action.payload);
-            console.log('--->',findIndex);
             temp.splice(findIndex,1);
-            console.log('--->',temp);
             return [...temp];
         default:
-            console.log("default");
             return todoState;
     }
 };
