@@ -1,5 +1,4 @@
-import Like from "./Like";
-import LikeComponent from "./Like";
+import LikeComponents  from "./LikeComponent";
 import BlogPostComponent from "./BlogPostComponent";
 import BookMarkComponent from "./BookmarkComponent";
 
@@ -7,7 +6,7 @@ function App() {
     return (
         <div className="container-fluid">
             <div className="row p-5">
-                <LikeComponent />
+                <LikeComponents />
                 <BlogPostComponent />
                 <BookMarkComponent />
             </div>
