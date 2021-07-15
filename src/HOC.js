@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
-// HOC is function which accept component
-function HOC(OldComponent) {
+// HOC is function which accept component, and data
+// here it accept component and its initial state ,
+// if initial state not passed default value will be 0
+function HOC(OldComponent,initialState=0) {
     // newComponent is a component
     const NewComponent = () => {
-        const [counts, setCounts] = useState(0);
+        const [counts, setCounts] = useState(initialState);
         const increaseCount = () => {
             setCounts(prevCount => prevCount + 1);
         };

@@ -19,4 +19,4 @@ const LikeComponent = (props) => {
     );
 };
 
-export default HOC(LikeComponent);
+export default HOC(LikeComponent,1);
