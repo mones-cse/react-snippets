@@ -8,3 +8,4 @@ This project is combination of multiple code snippet. Change branch to see each 
 * [React useReducer hook todolist example](https://github.com/mones-cse/react-snippets/tree/use-reducer-todo-list)
 * [React useContext basic example for class and functional component](https://github.com/mones-cse/react-snippets/tree/use_context)
 * [React useContext with different architecture with custom hooks](https://github.com/mones-cse/react-snippets/tree/use-context-custom-hook)
+* [React higher order component with basic example](https://github.com/mones-cse/react-snippets/tree/hoc)
