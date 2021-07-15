@@ -1,9 +1,18 @@
+import Like from "./Like";
+import LikeComponent from "./Like";
+import BlogPostComponent from "./BlogPostComponent";
+import BookMarkComponent from "./BookmarkComponent";
+
 function App() {
-    return <div className="Container">
-        <div className={"bg-light col-8 m-auto min-vh-100 text-center"}>
-            Hello
+    return (
+        <div className="container-fluid">
+            <div className="row p-5">
+                <LikeComponent />
+                <BlogPostComponent />
+                <BookMarkComponent />
+            </div>
         </div>
-    </div>;
+    );
 }
 
 export default App;
