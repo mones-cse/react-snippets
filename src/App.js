@@ -6,7 +6,7 @@ function App() {
     return (
         <div className="container-fluid">
             <div className="row p-5">
-                <LikeComponents />
+                <LikeComponents test={"Props data from app component"}/>
                 <BlogPostComponent />
                 <BookMarkComponent />
             </div>

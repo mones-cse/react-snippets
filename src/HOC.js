@@ -5,7 +5,7 @@ import React, { useState } from "react";
 // if initial state not passed default value will be 0
 function HOC(OldComponent,initialState=0) {
     // newComponent is a component
-    const NewComponent = () => {
+    const NewComponent = (props) => {
         const [counts, setCounts] = useState(initialState);
         const increaseCount = () => {
             setCounts(prevCount => prevCount + 1);
@@ -18,6 +18,7 @@ function HOC(OldComponent,initialState=0) {
                 counts={counts}
                 increaseCount={increaseCount}
                 decreaseCount={decreaseCount}
+                {...props}
             />
         );
     };

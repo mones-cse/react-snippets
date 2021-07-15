@@ -15,6 +15,8 @@ const LikeComponent = (props) => {
             <button className={"btn btn-lg btn-primary"} onClick={props.increaseCount}>Like</button>
             <p className={"m-4"}>Total like {props.counts}</p>
             <button className={"btn btn-lg btn-danger"} onClick={props.decreaseCount}>Dislike</button>
+
+            <p>{props.test}</p>
         </div>
     );
 };
