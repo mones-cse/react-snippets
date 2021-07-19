@@ -11,8 +11,8 @@ function App() {
                 {/*<BlogPostComponent />*/}
                 {/*<BookMarkComponent />*/}
 
-                <Counter
-                    render={(counts, increaseCount, decreaseCount) => {
+                <Counter>
+                    {(counts, increaseCount, decreaseCount) => {
                         return (
                             <LikeComponents
                                 test={"Props data from app component"}
@@ -22,10 +22,10 @@ function App() {
                             />
                         );
                     }}
-                />
+                </Counter>
                 <BlogPostComponent />
-                <Counter
-                    render={(counts, increaseCount, decreaseCount) => {
+                <Counter>
+                    {(counts, increaseCount, decreaseCount) => {
                         return (
                             <BookMarkComponent
                                 // short hand code
@@ -36,7 +36,34 @@ function App() {
                             />
                         );
                     }}
-                />
+                </Counter>
+
+                {/*<Counter*/}
+                {/*    render={(counts, increaseCount, decreaseCount) => {*/}
+                {/*        return (*/}
+                {/*            <LikeComponents*/}
+                {/*                test={"Props data from app component"}*/}
+                {/*                counts={counts}*/}
+                {/*                increaseCount={increaseCount}*/}
+                {/*                decreaseCount={decreaseCount}*/}
+                {/*            />*/}
+                {/*        );*/}
+                {/*    }}*/}
+                {/*/>*/}
+                {/*<BlogPostComponent />*/}
+                {/*<Counter*/}
+                {/*    render={(counts, increaseCount, decreaseCount) => {*/}
+                {/*        return (*/}
+                {/*            <BookMarkComponent*/}
+                {/*                // short hand code*/}
+                {/*                {...{counts, increaseCount, decreaseCount}}*/}
+                {/*                // counts={counts}*/}
+                {/*                // increaseCount={increaseCount}*/}
+                {/*                // decreaseCount={decreaseCount}*/}
+                {/*            />*/}
+                {/*        );*/}
+                {/*    }}*/}
+                {/*/>*/}
 
             </div>
         </div>
