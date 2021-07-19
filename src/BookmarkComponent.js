@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
-const BookMarkComponent = props => {
+const BookMarkComponent = ({counts, increaseCount, decreaseCount}) => {
     // following code handled by hoc
-    const [counts, setCounts] = useState(0);
-    const increaseCount = () => {
-        setCounts(prevLikes => prevLikes + 1);
-    };
-
-    const decreaseCount = () => {
-        setCounts(prevLikes => prevLikes - 1);
-    };
+    // const [counts, setCounts] = useState(0);
+    // const increaseCount = () => {
+    //     setCounts(prevLikes => prevLikes + 1);
+    // };
+    //
+    // const decreaseCount = () => {
+    //     setCounts(prevLikes => prevLikes - 1);
+    // };
     return (
         <div className={"col-2 p-5 card"}>
             <button

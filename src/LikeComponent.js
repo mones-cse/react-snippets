@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
-const LikeComponent = props => {
+const LikeComponent = ({counts, increaseCount, decreaseCount,test}) => {
     // following code handled by hoc
-    const [counts, setCounts] = useState(0);
-    const increaseCount = () => {
-        setCounts(prevLikes => prevLikes + 1);
-    };
-
-    const decreaseCount = () => {
-        setCounts(prevLikes => prevLikes - 1);
-    };
+    // const [counts, setCounts] = useState(0);
+    // const increaseCount = () => {
+    //     setCounts(prevLikes => prevLikes + 1);
+    // };
+    //
+    // const decreaseCount = () => {
+    //     setCounts(prevLikes => prevLikes - 1);
+    // };
     return (
         <div className={"col-2 p-5 card text-center"}>
             <button
@@ -23,7 +23,7 @@ const LikeComponent = props => {
                 Dislike
             </button>
 
-            <p>{props.test}</p>
+            <p>{test}</p>
         </div>
     );
 };
